@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.zenqrt.fabricplaygroundmapped.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "server.MinecraftServerMixin",
+    "player.PlayerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

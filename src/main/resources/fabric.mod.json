@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricplaygroundmapped",
+  "version": "${version}",
+  "name": "FabricPlaygroundMapped",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Zenqrt/FabricPlaygroundMapped"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fabricplaygroundmapped/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "dev.zenqrt.fabricplaygroundmapped.client.FabricPlaygroundMappedClient"
+    ],
+    "main": [
+      "dev.zenqrt.fabricplaygroundmapped.FabricPlaygroundMapped"
+    ],
+    "fabric-datagen": [
+      "dev.zenqrt.fabricplaygroundmapped.biomes.DataGeneratorEntrypoint"
+    ],
+    "fabric-gametest": [
+      "dev.zenqrt.fabricplaygroundmapped.test.TestGameTests"
+    ]
+  },
+  "mixins": [
+    "fabricplaygroundmapped.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
